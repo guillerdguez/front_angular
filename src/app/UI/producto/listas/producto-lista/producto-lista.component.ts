@@ -5,10 +5,11 @@ import { Producto } from '../../../../Model/Domain/Producto';
 @Component({
   selector: 'app-producto-lista',
   template: `
-    <app-esquema-lista [title]="title"></app-esquema-lista>
-    <app-esquema-lista [params]="productos"></app-esquema-lista>
+    <app-esquema-lista [title]="title" [params]="productos"></app-esquema-lista>
+ 
   `,
 })
+//120 de zoom
 export class ProductoListaComponent implements OnInit {
   title: string = 'Productos';
   productos: Producto[] = [];

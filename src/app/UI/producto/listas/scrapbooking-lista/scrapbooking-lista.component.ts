@@ -6,8 +6,7 @@ import { Producto } from '../../../../Model/Domain/Producto';
 @Component({
   selector: 'app-scrapbooking-lista',
   template: `
-    <app-esquema-lista [title]="title"></app-esquema-lista>
-    <app-esquema-lista [params]="productos"></app-esquema-lista>
+    <app-esquema-lista [title]="title" [params]="productos"></app-esquema-lista>
   `,
 })
 export class ScrapbookingListaComponent implements OnInit {
